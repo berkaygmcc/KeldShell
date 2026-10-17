@@ -33,7 +33,7 @@ The main goal of this project was to understand how a Unix shell works internall
 
 * Environment variable expansion
 
-* Special variable expansion such as $? and \\$$
+* Special variable expansion such as $? and \$$
 
 * Single and double quotes
 
