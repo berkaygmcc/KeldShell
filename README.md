@@ -11,46 +11,44 @@ The main goal of this project was to understand how a Unix shell works internall
 
 # Features
 
-* KeldShell supports:
+* External commands with fork() and execvp()
 
-External commands with fork() and execvp()
+* Built-in commands
 
-Built-in commands
+* Command pipelines with |
 
-Command pipelines with |
+* Logical operators with && and ||
 
-Logical operators with && and ||
+* Sequential commands with ;
 
-Sequential commands with ;
+* Background execution with &
 
-Background execution with &
+* Subshells with ( )
 
-Subshells with ( )
+* Input and output redirections
 
-Input and output redirections
+* Standard error redirections
 
-Standard error redirections
+* Here-documents
 
-Here-documents
+* Environment variable expansion
 
-Environment variable expansion
+* Special variable expansion such as $? and $$
 
-Special variable expansion such as $? and $$
+* Single and double quotes
 
-Single and double quotes
+* Escape characters
 
-Escape characters
+* Wildcards with * and ?
 
-Wildcards with * and ?
+* Command history
 
-Command history
+* Process groups
 
-Process groups
+* Foreground and background jobs
 
-Foreground and background jobs
+* jobs, fg, and bg
 
-jobs, fg, and bg
+* Ctrl-C and Ctrl-Z signal handling
 
-Ctrl-C and Ctrl-Z signal handling
-
-Interactive input with GNU Readline
+* Interactive input with GNU Readline
