@@ -277,11 +277,9 @@ A command passes through several stages before it is executed.
 ```mermaid
 graph TD
     A([User Input]) --> B[Readline]
-    B --> C[Girdiyi Parçala - Parse / Tokenize]
-    C --> D{Yerleşik Komut mu? - Built-in}
-    D -- Evet (Örn: cd, exit) --> E[Doğrudan Çalıştır]
-    D -- Hayır (Örn: ls, grep) --> F[Fork ile Child Process Oluştur]
-    F --> G[Child: exec ile komutu çalıştır]
-    F --> H[Parent: wait ile child'ı bekle]
-
+    B --> C[Lexer]
+    C --> D[Token List]
+    D -- E[Parser]
+    E -- F[AST]
+    F --> G([Execute])
 ```
