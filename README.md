@@ -271,3 +271,40 @@ echo file?.txt
 ```
 KeldShell reads entries from the current directory and matches them against the pattern.
 
+## How KeldShell Works
+A command passes through several stages before it is executed.
+
+User Input
+    |
+    v
+Readline
+    |
+    v
+Lexer
+    |
+    v
+Token List
+    |
+    v
+Parser
+    |
+    v
+Abstract Syntax Tree
+    |
+    v
+Variable Expansion
+    |
+    v
+Argument Preparation
+    |
+    v
+Wildcard Expansion
+    |
+    v
+Here-Document Processing
+    |
+    v
+Executor
+    |
+    v
+Processes / Built-ins
