@@ -279,7 +279,7 @@ graph TD
     A([User Input]) --> B[Readline]
     B --> C[Lexer]
     C --> D[Token List]
-    D -- E[Parser]
-    E -- F[AST]
+    D --> E[Parser]
+    E --> F[AST]
     F --> G([Execute])
 ```
