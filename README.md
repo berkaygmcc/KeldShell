@@ -9,7 +9,7 @@ The project includes command execution, pipes, redirections, logical operators, 
 The main goal of this project was to understand how a Unix shell works internally.
 
 
-# Features
+## Features
 
 * External commands with fork() and execvp()
 
@@ -52,3 +52,19 @@ The main goal of this project was to understand how a Unix shell works internall
 * Ctrl-C and Ctrl-Z signal handling
 
 * Interactive input with GNU Readline
+
+## Build
+### Requirements
+KeldShell is designed for Unix systems.
+
+You need:
+
+* GCC
+* GNU Make
+* GNU Readline
+* A POSIX-compatible environment
+
+GNU Readline can be installed with:
+```
+sudo apt install libreadline-dev
+```
