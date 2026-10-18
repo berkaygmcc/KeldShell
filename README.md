@@ -357,7 +357,9 @@ It only needs to walk this tree. This makes complex commands easier to execute.
 
 ## Job Control
 KeldShell includes basic Unix job control. A job can contain one or more processes.
-\nThe shell stores jobs with structures for:
+
+
+The shell stores jobs with structures for:
 * Job ID
 * Job Status
 * Process Group ID (PGID)
@@ -365,7 +367,9 @@ KeldShell includes basic Unix job control. A job can contain one or more process
 * Process Count
 * Completed Process Count
 * Stopped Process Count
-\nJobs can have these states:
+
+
+Jobs can have these states:
 ```
 STATE_RUNNING
 STATE_STOPPED
