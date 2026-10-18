@@ -307,20 +307,25 @@ Each AST node can contain:
 * a background flag
 
 #### Examples
+INPUT:
+```
+echo hello | grep h
+```
+AST:
 ```mermaid
 graph TD
-    %% Düğümler (Nodes)
-    Assign[=]
-    Var[x]
-    Add[+]
-    Num1[5]
-    Num2[10]
+    %% NODES
+    ROOT[PIPE]
+    LEFT[COMMAND]
+    RIGHT[COMMAND]
+    COMMAND1[echo hello]
+    COMMAND2[grep h]
 
-    %% Bağlantılar (Edges)
-    Assign --> Var
-    Assign --> Add
-    Add --> Num1
-    Add --> Num2
+    %% EDGES
+    ROOT --> LEFT
+    ROOT --> RIGHT
+    LEFT --> COMMAND1
+    RIGHT --> COMMAND2
 ```
 
 
