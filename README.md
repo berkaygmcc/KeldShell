@@ -225,6 +225,36 @@ echo $?
 | General Errors | 1 |
 | Command Not Found| 127 |
 | Terminated by User (Ctrl+C)| 130 |
+### Shell Process ID
+$$ expands to the process ID of KeldShell.
+```
+echo $$
+```
+## Quotes and Escaping
+### Single Quote
+Single quotes preserve the text literally.
+#### Input:
+```
+echo '$HOME'
+```
+#### Output:
+```
+$HOME
+```
+### Double Quote
+Double quotes preserve spaces but still allow variable expansion.
+#### Input:
+```
+echo "Path: $HOME"
+```
+#### Output:
+```
+Path: /home/user 
+```
+### Escaping
+Special characters can be escaped with \.
+## Wildcard Expansion
+
 
 
 
