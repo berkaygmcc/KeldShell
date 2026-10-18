@@ -327,6 +327,28 @@ graph TD
     LEFT --> COMMAND1
     RIGHT --> COMMAND2
 ```
+INPUT:
+```
+echo hello | grep h && echo found
+```
+AST:
+```mermaid
+graph TD
+    %% NODES
+    ROOT[AND]
+    LEFT[PIPE]
+    RIGHT[COMMAND]
+    COMMAND1[echo hello]
+    COMMAND2[grep h]
+    COMMAND3[echo found]
+
+    %% EDGES
+    ROOT --> LEFT
+    ROOT --> RIGHT
+    LEFT --> COMMAND1
+    LEFT --> COMMAND2
+    RIGHT --> COMMAND3
+```
 
 
 
