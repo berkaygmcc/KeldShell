@@ -355,4 +355,22 @@ graph TD
 ```
 It only needs to walk this tree. This makes complex commands easier to execute.
 
+## Job Control
+KeldShell includes basic Unix job control. A job can contain one or more processes.
+The shell stores jobs with structures for:
+* Job ID
+* Job Status
+* Process Group ID (PGID)
+* Process List
+* Process Count
+* Completed Process Count
+* Stopped Process Count
+Jobs can have these states:
+```
+STATE_RUNNING
+STATE_STOPPED
+STATE_DONE
+```
+
+
 
