@@ -376,5 +376,20 @@ STATE_STOPPED
 STATE_DONE
 ```
 
+### fg <job_id>
+fg moves a job back to the foreground. If the job was stopped, it is continued.
+
+### bg <job_id>
+bg continues a stopped job in the background. The shell does not wait for the job.
+
+### jobs
+The jobs built-in prints jobs managed by the shell:
+```
+[1] Running  pgid: 1314
+[2] Stopped  pgid: 1371
+```
+
+
+
 
 
