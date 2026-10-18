@@ -275,16 +275,9 @@ KeldShell reads entries from the current directory and matches them against the 
 A command passes through several stages before it is executed.
 
 ```mermaid
-graph TD
-    A([Başlat]) --> B[Sonsuz Döngü / Prompt Göster]
-    B --> C[Kullanıcı Girişi Al]
-    C --> D{Giriş Boş mu?}
-    D -- Evet --> B
-    D -- Hayır --> E[Komut Ayrıştırma / Parsing]
-    E --> F{Yerleşik Komut mu?<br>cd, exit, help vb.}
-    F -- Evet --> G[Yerleşik Komutu Çalıştır]
-    F -- Hayır --> H[Fork ve exec ile Çalıştır]
-    G --> B
-    H --> B
-    G -. exit .- -> I([Çıkış])
+block-beta
+      columns 1
+      A["Start"]
+      down<[" "]>(down)
+      C("Stop")
 ```
