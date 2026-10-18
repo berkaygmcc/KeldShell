@@ -95,6 +95,7 @@ After starting KeldShell, the prompt shows the current working directory.
 ```
 keld>> /home/user/projects >>
 ```
+### External Commands
 A normal external command can be executed directly:
 ```
 ls -la
@@ -102,6 +103,14 @@ ls -la
 ```
 cat file.txt
 ```
+### Built-in Commands
+KeldShell contains several built-in commands.
+| Commands | Description |
+| :--- | :--- |
+| `sudo apt update` | Paket listesini günceller. |
+| `sudo apt install libreadline-dev` | GNU Readline geliştirme kütüphanesini yükler. |
+| `ls -la` | Gizli dosyalar dahil tüm dosyaları listeler. |
+
 
 
 
