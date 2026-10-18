@@ -158,6 +158,52 @@ sleep 30 &
 ```
 Background jobs are stored in the shell job list.
 
+## Redirections
+### Standart Input
+The file becomes the standard input of the command.
+```
+cat < input.txt
+```
+### Standart Output
+Creates or truncates the file.
+```
+echo hello > output.txt
+```
+### Standard Output Append
+Writes to the end of the file.
+```
+echo hello >> output.txt
+```
+### Standard Error
+Redirects standard error.
+```
+ls missing_file 2> errors.txt
+```
+### Standard Error Append
+Appends standard error to a file.
+```
+ls missing_file 2>> errors.txt
+```
+### Here-Document
+#### Example:
+```
+cat << EOF
+hello
+world
+EOF
+```
+The shell reads input until the delimiter is entered. Variable expansion is supported inside an unquoted here-document delimiter.
+A quoted delimiter keeps the content literal.
+#### Example:
+```
+cat << 'EOF'
+hello
+world
+EOF
+```
+
+
+
 
 
 
