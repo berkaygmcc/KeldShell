@@ -254,9 +254,20 @@ Path: /home/user
 ### Escaping
 Special characters can be escaped with \.
 ## Wildcard Expansion
-
-
-
-
-
+It supports:
+```
+*
+?
+```
+* matches zero or more characters.
+#### Example:
+```
+echo *.c
+```
+? matches one character.
+#### Example:
+```
+echo file?.txt
+```
+KeldShell reads entries from the current directory and matches them against the pattern.
 
