@@ -201,7 +201,30 @@ hello
 world
 EOF
 ```
-
+## Variable Expansion
+Environment variables can be used inside commands.
+Variables can be written in two forms:
+```
+echo $HOME
+echo ${HOME}/file
+```
+Output:
+```
+/home/user
+/home/user/file
+```
+KeldShell also supports special values.
+### Last Exit Status
+$? contains the exit status of the previous command.
+```
+echo $?
+```
+| Status | Code |
+| :--- | :--- |
+| Success | 0 |
+| General Errors | 1 |
+| Command Not Found| 127 |
+| Terminated by User (Ctrl+C)| 130 |
 
 
 
