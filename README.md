@@ -109,17 +109,18 @@ KeldShell contains several built-in commands.
 | Commands | Description |
 | :--- | :--- |
 | cd | Changes the current working directory. |
+| exit | Exits KeldShell. |
+| help | Prints the help menu. |
 | pwd | Prints the current working directory. |
 | echo | Prints arguments. |
+| clear | Clears the terminal. |
+| env | Prints environment variables. |
 | export | Creates or updates an environment variable. |
 | unset | Removes an environment variable. |
 | history | Prints command history. |
 | jobs | Lists active and stopped jobs. |
 | fg | Moves a job to the foreground. |
 | bg | Continues a stopped job in the background. |
-| clear | Clears the terminal. |
-| help | Prints the help menu. |
-| exit | Exits KeldShell. |
 
 #### Example:
 ```
