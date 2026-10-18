@@ -108,7 +108,7 @@ KeldShell contains several built-in commands.
 | Commands | Description |
 | :--- | :--- |
 | cd | Changes the current working directory. |
-| pwd | Prints the current working directory |
+| pwd | Prints the current working directory. |
 | echo | Prints arguments. |
 | export | Creates or updates an environment variable. |
 | unset | Removes an environment variable. |
