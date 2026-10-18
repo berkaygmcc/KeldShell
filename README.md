@@ -107,10 +107,18 @@ cat file.txt
 KeldShell contains several built-in commands.
 | Commands | Description |
 | :--- | :--- |
-| `sudo apt update` | Paket listesini günceller. |
-| `sudo apt install libreadline-dev` | GNU Readline geliştirme kütüphanesini yükler. |
-| `ls -la` | Gizli dosyalar dahil tüm dosyaları listeler. |
-
+| cd | Changes the current working directory. |
+| pwd | Prints the current working directory |
+| echo | Prints arguments. |
+| export | Creates or updates an environment variable. |
+| unset | Removes an environment variable. |
+| history | Prints command history. |
+| jobs | Lists active and stopped jobs. |
+| fg | Moves a job to the foreground. |
+| bg | Continues a stopped job in the background. |
+| clear | Clears the terminal. |
+| help | Prints the help menu. |
+| exit | Exits KeldShell. |
 
 
 
