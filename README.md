@@ -33,7 +33,7 @@ The main goal of this project was to understand how a Unix shell works internall
 
 * Environment variable expansion with `$VAR` and `${VAR}`
 
-* Special variable expansion such as `$?` and `$$`
+* Special variable expansion with `$?` and `$$`
 
 * Single and double quotes
 
@@ -70,7 +70,7 @@ sudo apt install libreadline-dev
 ```
 
 ### Compile
-This creates the executable:
+Compile the project with:
 ```
 make
 ```
