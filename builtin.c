@@ -268,7 +268,7 @@ int run_fg(t_command *command, t_shell *shell){
 int run_bg(t_command *command, t_shell *shell){
 
     if(command->argc != 2){
-        fprintf(stderr, "bg: usage: fg <job_id>\n");
+        fprintf(stderr, "bg: usage: bg <job_id>\n");
         return -1;
     }
     
