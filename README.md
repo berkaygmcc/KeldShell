@@ -129,5 +129,35 @@ echo hello world
 pwd
 ```
 
+## Operators
+### Pipe
+The pipe operator connects the standard output of one command to the standard input of another command.
+```
+cat file.txt | grep hello | wc -l
+```
+Each command in the pipeline runs in its own process.
+### AND Operator
+&& executes the right command only if the left command succeeds.
+```
+mkdir test && cd test
+```
+### OR Operator
+|| executes the right command only if the left command fails.
+```
+cat missing.txt || echo "File was not found"
+```
+### Semicolon
+; executes commands in sequence.
+```
+echo first ; echo second
+```
+### Background Operator
+& runs a command without waiting for it to finish.
+```
+sleep 30 &
+```
+Background jobs are stored in the shell job list.
+
+
 
 
