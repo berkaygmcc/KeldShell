@@ -281,5 +281,10 @@ graph TD
     C --> D[Token List]
     D --> E[Parser]
     E --> F[AST]
-    F --> G([Execute])
+    F --> G[Variable Expansion]
+    G --> H[Argument Preparation]
+    H --> I[Wildcard Expansion]
+    I --> J[Here-Document Processing]
+    J --> K[Executor]
+    K --> L([Process])
 ```
