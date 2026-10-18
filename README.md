@@ -96,7 +96,8 @@ After starting KeldShell, the prompt shows the current working directory.
 keld>> /home/user/projects >>
 ```
 ### External Commands
-A normal external command can be executed directly:
+A normal external command can be executed directly.
+#### Example:
 ```
 ls -la
 ```
@@ -119,6 +120,14 @@ KeldShell contains several built-in commands.
 | clear | Clears the terminal. |
 | help | Prints the help menu. |
 | exit | Exits KeldShell. |
+
+#### Example:
+```
+echo hello world
+```
+```
+pwd
+```
 
 
 
