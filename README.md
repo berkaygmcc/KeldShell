@@ -68,3 +68,26 @@ GNU Readline can be installed with:
 ```
 sudo apt install libreadline-dev
 ```
+
+### Compile
+This creates the executable:
+```
+make
+```
+
+Run it with:
+```
+./keld
+```
+
+To remove the compiled executable:
+```
+make clean
+```
+
+To rebuild the project:
+```
+make re
+```
+
+
