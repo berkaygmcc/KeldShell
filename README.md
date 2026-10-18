@@ -92,9 +92,16 @@ make re
 
 ## Usage
 After starting KeldShell, the prompt shows the current working directory.
-Example:
 ```
 keld>> /home/user/projects >>
 ```
+A normal external command can be executed directly:
+```
+ls -la
+```
+```
+cat file.txt
+```
+
 
 
