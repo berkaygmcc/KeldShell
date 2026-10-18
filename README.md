@@ -90,4 +90,11 @@ To rebuild the project:
 make re
 ```
 
+## Usage
+After starting KeldShell, the prompt shows the current working directory.
+Example:
+```
+keld>> /home/user/projects >>
+```
+
 
