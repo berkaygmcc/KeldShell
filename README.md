@@ -353,6 +353,6 @@ graph TD
     COMMAND_NODE1 --> COMMAND1
     COMMAND_NODE2 --> COMMAND2
 ```
-
+It only needs to walk this tree. This makes complex commands easier to execute.
 
 
