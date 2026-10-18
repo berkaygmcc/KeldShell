@@ -301,15 +301,8 @@ AST_SEMICOLON
 AST_SUBSHELL
 ```
 Each AST node can contain:
-```
-typedef struct s_ast {
-    t_ast_type type;
-    int background;
-
-    struct s_ast *left;
-    struct s_ast *right;
-
-    t_command *command;
-} t_ast;
-```
+* a left child
+* a right child
+* a command
+* a background flag
 
