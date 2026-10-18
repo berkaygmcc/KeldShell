@@ -306,3 +306,22 @@ Each AST node can contain:
 * a command
 * a background flag
 
+#### Examples
+```mermaid
+graph TD
+    %% Düğümler (Nodes)
+    Assign[=]
+    Var[x]
+    Add[+]
+    Num1[5]
+    Num2[10]
+
+    %% Bağlantılar (Edges)
+    Assign --> Var
+    Assign --> Add
+    Add --> Num1
+    Add --> Num2
+```
+
+
+
