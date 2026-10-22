@@ -37,7 +37,7 @@ The main goal of this project was to understand how a Unix shell works internall
 
 * Single and double quotes
 
-* Escape characters
+* Special characters can be escaped with `\`
 
 * Wildcards with * and ?
 
@@ -252,8 +252,7 @@ echo "Path: $HOME"
 ```
 Path: /home/user 
 ```
-### Escaping
-Special characters can be escaped with \.
+
 ## Wildcard Expansion
 It supports:
 ```
