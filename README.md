@@ -322,7 +322,7 @@ Each AST node can contain:
 ```
 echo hello | grep h
 ```
-AST:
+##### AST:
 ```mermaid
 graph TD
     %% NODES
@@ -342,7 +342,7 @@ graph TD
 ```
 echo hello | grep h && echo found
 ```
-AST:
+##### AST:
 ```mermaid
 graph TD
     %% NODES
