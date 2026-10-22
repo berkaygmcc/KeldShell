@@ -318,7 +318,7 @@ Each AST node can contain:
 * a background flag
 
 #### Examples
-INPUT:
+##### INPUT:
 ```
 echo hello | grep h
 ```
@@ -338,7 +338,7 @@ graph TD
     LEFT --> COMMAND1
     RIGHT --> COMMAND2
 ```
-INPUT:
+##### INPUT:
 ```
 echo hello | grep h && echo found
 ```
