@@ -224,6 +224,7 @@ Output:
 /home/user
 /home/user/file
 ```
+## Special Values
 KeldShell also supports special values.
 ### Last Exit Status
 $? contains the exit status of the previous command.
