@@ -189,18 +189,28 @@ ls missing_file 2>> errors.txt
 #### Example:
 ```
 cat << EOF
-hello
-world
+hello world
+$HOME
 EOF
+```
+#### Output:
+```
+hello world
+/home/user
 ```
 The shell reads input until the delimiter is entered. Variable expansion is supported inside an unquoted here-document delimiter.
 A quoted delimiter keeps the content literal.
 #### Example:
 ```
 cat << 'EOF'
-hello
-world
+hello world
+$HOME
 EOF
+```
+#### Output:
+```
+hello world
+$HOME
 ```
 ## Variable Expansion
 Environment variables can be used inside commands.
