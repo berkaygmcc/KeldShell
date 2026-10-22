@@ -405,7 +405,10 @@ The jobs built-in prints jobs managed by the shell:
 [1] Running  pgid: 1314
 [2] Stopped  pgid: 1371
 ```
+## Project Status
+KeldShell is complete in its current form and the main features are implemented. The project may still receive small improvements, bug fixes, code cleanup, or new features in the future as I continue learning and improving the project.
 
+AI tools were used as a learning aid for explanations, debugging, and reviewing parts of the project.
 
 
 
