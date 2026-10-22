@@ -47,7 +47,7 @@ The main goal of this project was to understand how a Unix shell works internall
 
 * Foreground and background jobs
 
-* jobs, fg, and bg
+* jobs, fg and bg
 
 * Ctrl-C and Ctrl-Z signal handling
 
