@@ -242,7 +242,7 @@ $$ expands to the process ID of KeldShell.
 ```
 echo $$
 ```
-## Quotes and Escaping
+## Quotes
 ### Single Quote
 Single quotes preserve the text literally.
 #### Input:
