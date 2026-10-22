@@ -282,6 +282,12 @@ echo file?.txt
 ```
 KeldShell reads entries from the current directory and matches them against the pattern.
 
+## History
+* KeldShell keeps its own history and also uses GNU Readline history.
+* When the shell starts, saved commands from history.txt are loaded into both systems.
+* The internal history is used by the history built-in and for persistent command history. GNU Readline history allows previous commands to be accessed with the Up and Down arrow keys.
+New commands are added to both history systems.
+
 ## How KeldShell Works
 A command passes through several stages before it is executed.
 
@@ -399,6 +405,8 @@ The jobs built-in prints jobs managed by the shell:
 [1] Running  pgid: 1314
 [2] Stopped  pgid: 1371
 ```
+
+
 
 
 
